@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    //说明：函数是块级作用域，函数里面的变量不会影响到外部
+    let x = 3;
+    function add(x, y){
+        return x + y;
+    }
+    console.log( add(1,2) );
+
+</script>
+</body>
+</html>

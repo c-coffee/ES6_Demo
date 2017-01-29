@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    'use strict';
+
+    function add(x, y = 0){
+//        语法糖(实际等于如下代码)
+//        if(typeof y === 'undefined'){
+//            y = 0;
+//        }
+        return x + y;
+    }
+
+    let result = add(1, undefined);
+    console.log(result);
+</script>
+</body>
+</html>

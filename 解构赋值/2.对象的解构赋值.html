@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+    //解构赋值， 把右侧的数据类型赋值到左侧构造的相似的数据类型中
+    let obj = {
+        a: 'a',
+        b:'b',
+        c:'c'
+    };
+
+    let {x, y, z} = obj;
+    //相当于
+//    x = obj.x;
+//    y = obj.y;
+//    z = obj.z;
+    console.log(x, y, z);  //全部得到undefined;
+    //正确写法
+     let {a:mya, b:myb, c: myc} = obj;
+     console.log(mya, myb, myc )
+</script>
+</body>
+</html>
