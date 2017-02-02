@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    //示例：jquery 中的ajax函数
+//    $.ajax({
+//        type:'get',
+//        url:'baidu.com'
+//    });
+
+    //思考：为什么jquery中不是用下面的方法来定义$.ajax  ?
+    //$.ajax(type, url);
+    //因为采用对象为参数，里面的属性是hash的，不需要死记属性的顺序。
+
+    function ajax({type='get',url='default_url'}={}) {
+
+    }
+    ajax();
+</script>
+</body>
+</html>
