@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let str = "st\"fff'rr";
+    let str2 = 'sd\'fdsf"dsf';
+    let htmlStr = '<div>123\
+                   </div>\
+                  ';
+
+    /*
+    * es6 采用` 定义字符串，但 & {} \ 需要转义
+    * */
+    let es6Str = `""  '' \& \{\} \\`;
+    console.log(str, str2, htmlStr, es6Str);
+
+    let a = 'abc';
+    let es6Template = `123${a}456`;
+    console.log(es6Template);
+
+    //模板中加入运算表达式
+    let num = `1+2=${calc(1,2)}`;
+    console.log(num, '=========================');
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    //Array.from 把类数组转化为数组
+    let bodyDom = document.getElementsByName("body");
+    let bodyArr = Array.from(bodyDom || []);
+
+    // 同时也可以复制数组
+    let arr = [1, 2, 3];
+    let arr2 = arr;  // 传引用
+    arr2[0] = 123;
+    console.log(arr, arr2); //两个数组都发生改变
+
+    let arr3 = Array.from(arr);  //复制数据
+    arr3[0] = 456;
+    console.log(arr, arr3);
+</script>
+</body>
+</html>
