@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let obj1 = {x:'x'};
+    let obj2 = {y:'y'};
+    let obj3 = {x:'x2'};
+
+    //Object.assign 将obj2和obj3的属性值覆盖到obj1
+    //同名属性值被覆盖，不同名的将被添加
+    let obj4 = Object.assign(obj1,obj2,obj3);
+    console.log(obj1,obj4, obj1 === obj4);
+</script>
+</body>
+</html>
